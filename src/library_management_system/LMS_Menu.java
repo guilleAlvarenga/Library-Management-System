@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class LMS_Menu {
     private Scanner sc = new Scanner(System.in);
     private Library library = new Library();
-    private AdminP adminP = new AdminP(library);
-    private UserPermissions userMenu = new UserPermissions(library);
+    private AdminP adminP;
+    private UserPermissions userMenu;
     
     public LMS_Menu(Library library) {
         this.library = library;
+        adminP = new AdminP(library);
+        userMenu = new UserPermissions(library);
          boolean running = true;
         
         while(running){
