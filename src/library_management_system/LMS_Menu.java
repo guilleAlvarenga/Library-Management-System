@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LMS_Menu {
     private Scanner sc = new Scanner(System.in);
-    private Library library = new Library();
+    private Library library;
     private AdminP adminP;
     private UserPermissions userMenu;
     
